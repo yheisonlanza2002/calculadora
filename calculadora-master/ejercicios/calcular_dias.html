@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dias de la semana</title>
+</head>
+<body>
+    <form action="#" method="POST" >
+        <select  id="dia">
+            <option value="1">dia 1</option>
+            <option value="2">dia 2</option>
+            <option value="3">dia 3</option>
+            <option value="4">dia 4</option>
+            <option value="5">dia 5</option>
+            <option value="6">dia 6</option>
+            <option value="7">dia 7</option>
+            <option value="0">no existe dia</option>
+        </select>
+
+        <button type="button" onclick="calcular_dia();">calcular</button>
+    </form>
+    <div id="resultado"></div>
+</body>
+</html>
+
+<script>
+    function calcular_dia() {
+
+    let dia= parseInt(document.getElementById('dia').value)
+
+    switch (dia) {
+        case 1:
+                document.document.getElementById('resultado').innerHTML="el dia es lunes";
+            
+            break;
+        case 2:
+                document.document.getElementById('resultado').innerHTML="el dia es martes";
+            
+            break;
+        case 3:
+                document.document.getElementById('resultado').innerHTML="el dia es miercoles";
+            
+            break;
+        case 4:
+                document.document.getElementById('resultado').innerHTML="el dia es jueves";
+            
+            break;
+        case 5:
+                document.document.getElementById('resultado').innerHTML="el dia es viernes";
+            
+            break;
+        case 6:
+                document.document.getElementById('resultado').innerHTML="el dia es sabado";
+            
+            break;
+        case 7:
+                document.document.getElementById('resultado').innerHTML="el dia es domingo";
+            
+            break;
+        default :
+                document.document.getElementById('resultado').innerHTML="el dia no existe";
+            
+            break;
+    }
+    }
+</script>

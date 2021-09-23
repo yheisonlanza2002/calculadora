@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area de un triangulo</title>
+</head>
+<body>
+    <form action="#" method="POST" >
+        <input type="number" id="base" value="" placeholder="dijite la base "><br><br>
+        <input type="number" id="altura" value="" placeholder="dijite la altura "><br><br>
+        <button type="button" onclick="calcular();">calcular</button>
+    </form>
+</body>
+</html>
+
+<script>
+    function calcular() {
+
+    let base= parseInt(document.getElementById('base').value)
+    let altura= parseInt(document.getElementById('altura').value)
+    let resultado= (base * altura)  / 2;
+      
+       alert('el area de ' + base + '  y  ' + altura + ' es igual a '  + resultado) 
+    }
+</script>

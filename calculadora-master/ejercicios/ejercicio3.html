@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="horizontal">  
+        <li class="menu-horizontal"> <a href="ejecicio_1.html">Ejercisio 1</a></li>
+        <li class="menu-horizontal"> <a href="ejecicio_2.html">Ejercisio 2</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio3.html">Ejercisio 3</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio_4.html">Ejercisio 4</a></li>
+    </ul>
+    <form >
+        <input type="text" id="t1" value="" placeholder="primer parcial"><br><br>
+        <input type="text" id="t2" value="" placeholder="segundo parcial"><br><br>
+        <input type="text" id="t3" value="" placeholder="tercer parcial"><br><br>
+        <input type="text" id="t4" value="" placeholder="examen final"><br><br>
+
+        <button class="boton" type="button" value="carcular" onclick="calcular();">calcular</button>
+    </form>
+
+</body>
+</html>
+<script>
+    function calcular() {
+        let parcial1 = document.getElementById('t1').value;
+        let parcial2 = document.getElementById('t2').value;
+        let parcial3 = document.getElementById('t3').value;
+        let notafial = document.getElementById('t4').value;
+        let p = (parseInt(parcial1)+parseInt(parcial2)+parseInt(parcial3)+parseInt(notafial))/4;
+
+            if (p >= 30) {
+                alert('aprovo' + p)
+                }else{      
+                alert('reprobo' + p)
+            }if (p == 25) {
+                alert('transision' + p)
+            }
+        }
+</script>

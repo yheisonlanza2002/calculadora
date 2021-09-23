@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="horizontal">  
+        <li class="menu-horizontal"> <a href="ejecicio_1.html">Ejercisio 1</a></li>
+        <li class="menu-horizontal"> <a href="ejecicio_2.html">Ejercisio 2</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio3.html">Ejercisio 3</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio_4.html">Ejercisio 4</a></li>
+    </ul>
+    <form action="#" method="POST" >
+        <input type="number" id="sueldo" value="" placeholder="digite su sueldo"><br><br>
+        <button class="boton" type="button" onclick="calcular_sueldo();">calcular</button>
+    </form>
+</body>
+</html>
+
+<script>
+    function calcular_sueldo() {
+    let saldo= parseInt(document.getElementById('sueldo').value)
+    let r1;
+    let aumento;
+    let r2;
+    let aumento2;
+    let total;
+    
+    if (saldo >= 1000000) {
+        aumento = (1000000 * 0.5)
+        r1 = saldo + aumento ;
+        alert ('lo que usted gano es ' + saldo + ' y el aumento es de ' + aumento + ' para un total de' + r1)
+    }
+    if (saldo <= 800000) {
+        aumento2 = (800000 * 0.10)
+        r2 = saldo + aumento2;
+        alert('lo que usted gano es ' + saldo + ' y el aumento es de ' + aumento2 + ' para un total de' + r2)
+    }
+}
+</script>

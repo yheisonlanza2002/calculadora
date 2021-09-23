@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <ul class="horizontal">  
+        <li class="menu-horizontal"> <a href="ejecicio_1.html">Ejercisio 1</a></li>
+        <li class="menu-horizontal"> <a href="ejecicio_2.html">Ejercisio 2</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio3.html">Ejercisio 3</a></li>
+        <li class="menu-horizontal"> <a href="ejercicio_4.html">Ejercisio 4</a></li>
+    </ul>
+    <form action="#" method="POST" >
+        <fieldset>
+            <legend>Bienvenidos</legend>
+            <input  type="number" id="horas" value="" placeholder="digite las horas"><br><br>
+            <button class="boton" type="button" onclick="calcular();">calcular</button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
+<script>
+     
+    function calcular() {
+    let resultado1;
+    let resultado2;
+    let extras;
+    let total;
+    let hora= parseInt(document.getElementById('horas').value)
+
+    if (hora <= 40) {
+        resultado1 = (horas * 10000);     
+    }
+    if (hora > 40) {
+        extras = hora - 40;
+        resultado2 = (extras * 15000);
+        resultado1 = (40 * 10000); 
+        total = (resultado1 + resultado2);  
+    }
+    alert('las horas en total son ' + hora + ' las horas normales a pagar son ' + resultado1 + ' y las horas extras son '+  extras + ' y valen ' + resultado2 + ' y un total a pagar de ' + total );
+    }
+</script>

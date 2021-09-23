@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- <h2>Calcular promedio en JavaScript</h2> -->
+<form>
+ Primer Número:<br>
+ <input type="text" id="t1">
+ <br>
+ Segundo Número:<br>
+ <input type="text" id="t2">
+ <br>
+ Tercer Número:<br>
+ <input type="text" id="t3">
+ <br><br>
+ <input type="button" value="Calcular" onclick="Calcular();">
+</form> 
+<p id="promedio"></p>
+</body>
+<script> 
+function Calcular() { 
+var vr1 = document.getElementById('t1').value; 
+var vr2 = document.getElementById('t2').value; 
+var vr3 = document.getElementById('t3').value; 
+var p = (parseFloat(vr1)+parseFloat(vr2)+parseFloat(vr3))/3; 
+        document.getElementById('promedio').innerHTML = p; 
+}
+</script>
+</html>
+

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../proyecto_formativo/img/servidor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    /* background-color: turquoise; */
+    margin: 40%;
+    padding: 20px;
+    margin-top: 10%;
+}
+.boton{
+    color: grey;
+    background-color: black;
+    padding: 15px;
+    border-radius: 4px;
+    margin-left: 27%;
+    font-size: 1.6em;
+}
+input{
+    background-color: rgb(158, 158, 161);
+    padding: 15px;
+    height: 20px;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(25,25,25);
+    color: white;
+}
+li{
+    font-weight: 600;
+}
+li:hover{
+    background-color: grey;
+}
+a{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+}
+.menu-horizontal{  
+    display: inline-block; 
+    list-style: none;
+    margin: 0 auto;
+    border-bottom: 3px solid whitesmoke;
+    padding: 10px 14px;
+    border-radius: 4px;
+}
+.horizontal{
+    text-align: right;
+    padding: 20px;
+    margin-right: 10%;
+    border-radius: 3px;
+    /* background-color: violet; */
+}
+fieldset{
+    color: white;
+    width: 50%;
+}
+legend{
+    color: rgb(206, 202, 202);
+    font-weight: 600;
+    /* width: 20%; */
+    font-size: 1em;
+}
